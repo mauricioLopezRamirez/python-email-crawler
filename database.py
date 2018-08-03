@@ -1,6 +1,10 @@
 from sqlalchemy import create_engine, Table, Column, Integer, Unicode, Boolean, MetaData, select
 import urlparse
 
+import sys  
+reload(sys)  
+sys.setdefaultencoding('utf8')
+
 DATABASE_NAME = 'data/crawler.sqlite'
 HTML_DIR = 'data/html/'
 
